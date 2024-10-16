@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.login-body h5 {
+    color: #bfc747;
+    margin-bottom: -10;
+}
+.login-body h6{
+    color:#bfc747;
+}
+
+
+.login-container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 70vh;
+    background-color: #00000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.login-header {
+    flex: 1;
+    background-image: url('./Premium\ Photo\ _\ Empty\ kitchen\ table\ with\ kitchen\ background\ blurred_\ isolated\ table\,\ space\ for\ product\ and\ food_.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+     background-blend-mode: overlay;
+}
+
+.login-header h2 {
+    font-size: 5vh;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    color: rgb(0, 0, 0);
+    line-height: 4vh;
+}
+.login-header span{
+    font-size: 4vh;
+}
+
+.login-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0px 0px 20px 20px;
+    /* Added background color to the lower part */
+    background-color: #3e3e3e; /* Matches the image style */
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #020101;
+    border-radius: 5px;
+    background-color: #020101;
+    font-size: 1rem;
+    transition: border 0.3s ease; /* Smooth transition for border color */
+}
+.input-container input ::placeholder{
+  color: #f0f0f0;
+}
+
+/* Focus effect with yellow border */
+.input-container input:focus {
+    border-color: yellow;
+    outline: none; /* Remove default blue outline */
+}
+
+.input-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+}
+
+
+.login-btn {
+    padding: 10px;
+    border: none;
+    background-color: #1a2525;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #260057;
+}
